@@ -27,16 +27,20 @@ export const settingTypes = [
 
 export const SCHEMA_TYPES = [
   {
-    type: "header",
-    options: ["content"],
+    type: "blog",
+    options: ["id", "label", "info"],
   },
   {
-    type: "paragraph",
-    options: ["content"],
+    type: "checkbox",
+    options: ["id", "label", "info", "default"],
   },
   {
-    type: "text",
-    options: ["id", "label", "info", "placeholder", "default"],
+    type: "collection",
+    options: ["id", "label", "info"],
+  },
+  {
+    type: "collection_list",
+    options: ["id", "label", "info"],
   },
   {
     type: "color",
@@ -47,8 +51,28 @@ export const SCHEMA_TYPES = [
     options: ["id", "label", "info", "default"],
   },
   {
-    type: "collection",
+    type: "header",
+    options: ["content"],
+  },
+  {
+    type: "image_picker",
     options: ["id", "label", "info"],
+  },
+  {
+    type: "link_list",
+    options: ["id", "label", "info"],
+  },
+  {
+    type: "number",
+    options: ["id", "label", "info", "placeholder", "default"],
+  },
+  {
+    type: "page",
+    options: ["id", "label", "info"],
+  },
+  {
+    type: "paragraph",
+    options: ["content"],
   },
   {
     type: "product",
@@ -59,20 +83,28 @@ export const SCHEMA_TYPES = [
     options: ["id", "label", "info"],
   },
   {
-    type: "collection_list",
-    options: ["id", "label", "info"],
+    type: "radio",
+    options: ["id", "label", "info", "options", "default"],
   },
   {
-    type: "blog",
-    options: ["id", "label", "info"],
+    type: "range",
+    options: ["id", "label", "min", "max", "step", "unit", "info", "default"],
   },
   {
-    type: "page",
-    options: ["id", "label", "info"],
+    type: "richtext",
+    options: ["id", "label", "info", "default"],
   },
   {
-    type: "link_list",
-    options: ["id", "label", "info"],
+    type: "select",
+    options: ["id", "label", "info", "options", "default"],
+  },
+  {
+    type: "text",
+    options: ["id", "label", "info", "placeholder", "default"],
+  },
+  {
+    type: "textarea",
+    options: ["id", "label", "info", "placeholder", "default"],
   },
   {
     type: "url",
@@ -81,38 +113,6 @@ export const SCHEMA_TYPES = [
   {
     type: "video_url",
     options: ["id", "label", "accept", "placeholder", "info", "default"],
-  },
-  {
-    type: "richtext",
-    options: ["id", "label", "info", "default"],
-  },
-  {
-    type: "checkbox",
-    options: ["id", "label", "info", "default"],
-  },
-  {
-    type: "range",
-    options: ["id", "label", "min", "max", "step", "unit", "info", "default"],
-  },
-  {
-    type: "textarea",
-    options: ["id", "label", "info", "placeholder", "default"],
-  },
-  {
-    type: "number",
-    options: ["id", "label", "info", "placeholder", "default"],
-  },
-  {
-    type: "select",
-    options: ["id", "label", "info", "options", "default"],
-  },
-  {
-    type: "radio",
-    options: ["id", "label", "info", "options", "default"],
-  },
-  {
-    type: "image_picker",
-    options: ["id", "label", "info"],
   },
 ];
 

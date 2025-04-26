@@ -77,7 +77,7 @@ export default function Editor() {
 
   return (
     <div className="editor">
-      <h1 className="header">Shopify Section Editor</h1>
+      <h1 className="header">Shopify Section Editor V3</h1>
       {loading ? (
         <div className="skeleton-loader">
           <div className="skeleton-header"></div>

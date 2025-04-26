@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && touch dist/.nojekyll && gh-pages -d dist --dotfiles"
+    "deploy": "next build && echo.> out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@shadcn/ui": "^0.0.4",
@@ -24,6 +24,7 @@
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
     "eslint-config-next": "15.2.2",
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "typescript": "^5.8.3"
   }
 }
